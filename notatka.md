@@ -32,3 +32,12 @@ ELEMENTY BLOKOWE
 
 id="" -----> nadanie id danemu fragmentowi
 class="" --> grupa obiektów
+
+
+
+
+
+
+      ZADANIE DOMOWE
+
+przygotuj rebus używając znaków specjalnych HTML (ASCII)
