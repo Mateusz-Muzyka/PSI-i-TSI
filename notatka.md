@@ -28,3 +28,7 @@ ELEMENTY BLOKOWE
 - div
 - p
   
+
+
+id="" -----> nadanie id danemu fragmentowi
+class="" --> grupa obiektów
