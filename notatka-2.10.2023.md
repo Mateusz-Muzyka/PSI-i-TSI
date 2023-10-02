@@ -1,8 +1,16 @@
 # PSI-i-TSI
 
 
-<table>
+<table> <------- tworzenie stołu
+<tr> <---------- wydzielenie fragmentu
+<th> <---------- pogrubiona
+  text
+</th>
+</tr>
 
-
-  
-</table>
+<tr>
+<td> <----------- "normalna"
+  text
+</td>
+</tr>
+</table> 
