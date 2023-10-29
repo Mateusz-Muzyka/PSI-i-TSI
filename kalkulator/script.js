@@ -3,26 +3,47 @@ const L1 = document.getElementById("x")
 const L2 = document.getElementById("y")
 const L3 = document.getElementById("wynik")
 
-function jeden(){
+
+function suma(){
+	let x = L1.value
+	let y = L2.value
+	sumnik = parseInt(x) + parseInt(y)
+	console.log(sumnik)
 	
-	console.log(L1.value)
+	L3.value = sumnik
 	
 	
 }
 
-function dwa(){
+function odejmowanie(){
+	let x = L1.value
+	let y = L2.value
+	sumnik = parseInt(x) - parseInt(y)
+	console.log(sumnik)
 	
-	console.log(L2.value)
-	
+	L3.value = sumnik
 	
 	
 }
 
-function wynik(){
+function iloczyn(){
+	let x = L1.value
+	let y = L2.value
+	sumnik = parseInt(x) * parseInt(y)
+	console.log(sumnik)
 	
-	L3.value = L1.value+L2.value
-	console.log(L3.value)
+	L3.value = sumnik
 	
+	
+}
+
+function iloraz(){
+	let x = L1.value
+	let y = L2.value
+	sumnik = parseInt(x) / parseInt(y)
+	console.log(sumnik)
+	
+	L3.value = sumnik
 	
 	
 }
