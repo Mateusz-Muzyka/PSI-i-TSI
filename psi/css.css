@@ -8,6 +8,11 @@ th:first-child{width:20px}
 
 tr:first-child > th:first-child{border-top:none; border-left:none}
 
-		td:nth-child(even){
+	tr:nth-child(odd) > td:nth-child(even){
+		background: grey
+				}	
+	tr:nth-child(even) > td:nth-child(odd){
 		background: grey
 				}
+				
+td:hover{outline:3px solid red}
