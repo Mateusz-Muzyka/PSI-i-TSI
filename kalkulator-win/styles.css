@@ -1,0 +1,7 @@
+table, td{margin:2px; border:2px solid black; }
+/* #db{padding:25px} */
+
+button{  margin:auto;
+		display:block;
+		width: 100%;
+		}
