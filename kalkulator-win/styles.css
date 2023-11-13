@@ -1,7 +1,23 @@
-table, td{margin:2px; border:2px solid black; }
-/* #db{padding:25px} */
+table, td
+		{	margin:1px;
+			border:2px solid transparent;
+			border-collapse:collapse;
+			background-color: grey;
+			border-radius:8px;
+			
+			}
+
+input{outline-style: solid; outline-color:grey; outline-width:3px; margin-left:5px;}
 
 button{  margin:auto;
 		display:block;
 		width: 100%;
+		border-bottom-left-radius:8px;
+		border-bottom-right-radius:8px;
 		}
+		
+.rozszerz{height:46px}
+
+#02{		margin:5px;
+			border:2px solid transparent;
+			border-collapse:collapse;}
