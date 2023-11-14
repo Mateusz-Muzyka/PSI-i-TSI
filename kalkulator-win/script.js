@@ -114,8 +114,8 @@ for(let i=0; i< guz.length; i++){
 			break;
 			
 
-			case "&#8730;":
-				ekran.value = ("&#8730;")
+			case "√":
+				ekran.value = ("√")
 				if(L1 != null || L1 == 0){
 					DZ = Math.sqrt(L1)
 					console.log(L1)
