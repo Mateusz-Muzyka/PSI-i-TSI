@@ -7,7 +7,7 @@ table, td
 			
 			}
 
-input{outline-style: solid; outline-color:grey; outline-width:3px; margin-left:5px;}
+
 
 button{  margin:auto;
 		display:block;
@@ -21,3 +21,24 @@ button{  margin:auto;
 #02{		margin:5px;
 			border:2px solid transparent;
 			border-collapse:collapse;}
+			
+			
+			
+@font-face {
+    font-family: 'DS-Digital';
+    src:url('DS-Digital.ttf.woff') format('woff'),
+        url('DS-Digital.ttf.svg#DS-Digital') format('svg'),
+        url('DS-Digital.ttf.eot'),
+        url('DS-Digital.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+}
+
+input{
+	  outline-style: solid; 
+	  outline-color:grey;
+	  outline-width:3px;
+	  margin-left:5px;
+	  font-family:'DS-Digital';
+	  text-align:right;
+	 }

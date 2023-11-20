@@ -138,6 +138,10 @@ for(let i=0; i< guz.length; i++){
 				
 				if(pr == 1){
 					pr = 0
+					let q;
+					c = L1 * L2;
+					DZ = c / 100;
+					
 				}
 				
 				ekran.value = (DZ)
