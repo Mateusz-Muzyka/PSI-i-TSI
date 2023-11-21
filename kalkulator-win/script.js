@@ -3,14 +3,14 @@
 
 
 let L1 = null;
-let subL1 = null;
+
 let L2 = null;
-let subL2 = null;
+
 let DZ = null;
 let P = null;
 let g = null;
 let a = null;
-
+let m = 0;
 
 let d = null;
 let dd = null;
@@ -145,13 +145,14 @@ for(let i=0; i< guz.length; i++){
 				}
 				
 				ekran.value = (DZ)
+				L1 = DZ
 				pp = null;
 				o = null;
 				d = null;
 				dd = null;
 				pr = null;
 				il = null;
-				L1 = null;
+				
 				L2 = null;
 			break;		
 
@@ -160,24 +161,64 @@ for(let i=0; i< guz.length; i++){
 				L1 = null;
 				L2 = null;
 				ekran.value = (null)
-			break;
-			
-			case "MRC":
-				a = 0;
 				pp = null;
 				o = null;
 				d = null;
 				dd = null;
 				pr = null;
 				il = null;
+				
+				a = 0;
 			break;
 			
+			case "MRC":
+				
+				if(m != null && m != L1){
+					ekran.value = (m)
+					L1 = m
+					console.log(m)
+			  } else if(m == L1) {
+					m = null;
+					console.log(m)
+				}
+
+			break;
+			
+			case "M-":
+				if(L1 != null && DZ == null){
+					
+					m = parseInt(m) - parseInt(L1)
+					
+				}else {
+					m = parseInt(m) - parseInt(DZ)
+					console.log(m)
+					}
+			break;
+			
+			case "M+":
+				console.log(m)
+				if(L1 != null && DZ == null){
+					
+					m = parseInt(m) + parseInt(L1)
+					
+				}else {
+					m = parseInt(m) + parseInt(DZ)
+					console.log(m)
+					}
+					
+				
+			break;
 
 			case "√":
 				ekran.value = ("√")
 				
 				pp = 1;
-				
+			break;	
+			
+			
+			case "OFF":
+				ekran.value = (null)
+			break;
 		}
 		
 	}
