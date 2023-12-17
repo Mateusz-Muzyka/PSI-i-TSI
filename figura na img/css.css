@@ -1,0 +1,12 @@
+section{
+	border:2px solid black;
+	width:auto;
+	position:absolute;
+	display:flex;
+}
+#s0{background-image: url('p.png'); left:70px}
+#s1{background-image: url('p-r.png'); left:40px}
+#s2{background-image: url('p-y.png')}
+
+
+
