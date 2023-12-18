@@ -1,6 +1,7 @@
 
-html{background-color:grey}
-
+html{background-color:grey; 
+	display:flex;	
+	}
 
 .circle {
   width: 100px;
@@ -14,32 +15,32 @@ html{background-color:grey}
 #top{
 	
 
-	top: 37%;
-	left: 51.3%;
+	top: 39vh;
+	left: 75.8vh;
 	width:65px;
 	height:65px;
 	z-index:98;
 }
 #mid{
 	
-	top: 43%;
-	left: 50.5%;
+	top: 43vh;
+	left: 74.7vh;
 	width:85px;
 	height:85px;
 	z-index:90;
 }
 #bot{
 	
-	top: 50%;
-	left: 50%;
+	top: 48vh;
+	left: 74vh;
 	width:100px;
 	height:100px;
 	z-index:80;
 }
 #oko{
 	
-	top: 39%;
-	left: 52%;
+	top: 40.5vh;
+	left: 77vh;
 
 	width:10px;
 	height:10px;
@@ -48,8 +49,8 @@ html{background-color:grey}
 }
 #oko2{
 	
-	top: 39%;
-	left: 55%;
+	top: 40.5vh;
+	left: 80vh;
 
 	width:10px;
 	height:10px;
@@ -65,8 +66,8 @@ html{background-color:grey}
     border-top:5px solid transparent;
     border-right: 10px solid orange;
     border-bottom: 5px solid transparent;
-	top: 40%;
-	left: 53.1%;
+	top: 41vh;
+	left: 78vh;
 	position: absolute;
 	z-index:100;
 }
@@ -79,6 +80,30 @@ html{background-color:grey}
 	width: 30px;
 	position:absolute;
 	z-index:100;
-	left: 50.5%;
-	top:35.5%
+	left: 75vh;
+	top:38vh
 }
+
+
+
+.reka{
+  width: 120px;
+  height: 12px;
+  background: brown;
+}
+#lewa{
+	
+	position:absolute;
+	left:70vh;
+	top:46vh;
+	transform: rotate(35deg);
+}
+  #prawa{
+	
+	position:absolute;
+	left:76vh;
+	top:46vh;
+	transform: rotate(510deg);
+	
+}
+  
