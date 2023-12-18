@@ -1,0 +1,84 @@
+
+html{background-color:grey}
+
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle at 65% 15%, grey 1px, #DFE5ED 3%, white 60%,  white 100%);
+  border-radius: 50%;
+  position: absolute;
+  
+}
+
+#top{
+	
+
+	top: 37%;
+	left: 51.3%;
+	width:65px;
+	height:65px;
+	z-index:98;
+}
+#mid{
+	
+	top: 43%;
+	left: 50.5%;
+	width:85px;
+	height:85px;
+	z-index:90;
+}
+#bot{
+	
+	top: 50%;
+	left: 50%;
+	width:100px;
+	height:100px;
+	z-index:80;
+}
+#oko{
+	
+	top: 39%;
+	left: 52%;
+
+	width:10px;
+	height:10px;
+	background: black;
+	z-index:100;
+}
+#oko2{
+	
+	top: 39%;
+	left: 55%;
+
+	width:10px;
+	height:10px;
+	background: black;
+	z-index:100;
+	
+}
+
+
+#nos {
+    width: 0;
+    height: 0;
+    border-top:5px solid transparent;
+    border-right: 10px solid orange;
+    border-bottom: 5px solid transparent;
+	top: 40%;
+	left: 53.1%;
+	position: absolute;
+	z-index:100;
+}
+
+#trap {
+	border-bottom: 25px solid red;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 30px;
+	position:absolute;
+	z-index:100;
+	left: 50.5%;
+	top:35.5%
+}
