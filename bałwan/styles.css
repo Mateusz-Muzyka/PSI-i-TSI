@@ -17,7 +17,7 @@ html{background-color:grey;
 	
 
 	top: 39vh;
-	left: 75.8vh;
+	left: 75.8vw;
 	width:65px;
 	height:65px;
 	z-index:98;
@@ -25,7 +25,7 @@ html{background-color:grey;
 #mid{
 	
 	top: 43vh;
-	left: 74.7vh;
+	left: 74.7vw;
 	width:85px;
 	height:85px;
 	z-index:90;
@@ -33,7 +33,7 @@ html{background-color:grey;
 #bot{
 	
 	top: 48vh;
-	left: 74vh;
+	left: 74vw;
 	width:100px;
 	height:100px;
 	z-index:80;
@@ -41,7 +41,7 @@ html{background-color:grey;
 #oko{
 	
 	top: 40.5vh;
-	left: 77vh;
+	left: 77vw;
 
 	width:10px;
 	height:10px;
@@ -51,7 +51,7 @@ html{background-color:grey;
 #oko2{
 	
 	top: 40.5vh;
-	left: 80vh;
+	left: 80vw;
 
 	width:10px;
 	height:10px;
@@ -68,7 +68,7 @@ html{background-color:grey;
     border-right: 10px solid orange;
     border-bottom: 5px solid transparent;
 	top: 41vh;
-	left: 78vh;
+	left: 78vw;
 	position: absolute;
 	z-index:100;
 }
@@ -81,7 +81,7 @@ html{background-color:grey;
 	width: 30px;
 	position:absolute;
 	z-index:100;
-	left: 75vh;
+	left: 75vw;
 	top:38vh
 }
 
@@ -95,17 +95,23 @@ html{background-color:grey;
 #lewa{
 	
 	position:absolute;
-	left:70vh;
+	left:70vw;
 	top:46vh;
 	transform: rotate(35deg);
 }
 #prawa{
 	
 	position:absolute;
-	left:76vh;
+	left:76vw;
 	top:46vh;
 	transform: rotate(510deg);
-	
+	animation: anim 1s infinite alternate;
+	@keyframe anim{
+		
+		from {transform: rotate(510deg);}
+		to {transform: rotate(600deg);}
+		
+	}
 }
  
 #buzia{
@@ -115,8 +121,53 @@ html{background-color:grey;
     box-shadow: 4px 4px 0 0 grey;
 	position: absolute;
 	z-index:100;
-	left:76.3vh;
+	left:76.3vw;
 	top:38.5vh;
 	transform: rotate(40deg);
 	
 }
+
+#kora{
+	
+  width: 80px;
+  height: 110px;
+  background: brown;
+  top:50vh;
+  z-index:1;
+  left:43vw;
+  position:absolute;
+}
+
+.drzewo{
+	
+	position:absolute;
+    width: 0;
+    height: 0;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    border-bottom: 100px solid green;	
+}
+
+#bott{
+	
+	top:42vh;
+	left:31vw;
+	z-index:50;
+}
+
+#midt{
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
+	top:35vh;
+	left:33vw;
+	z-index:60;
+}
+
+#topt{
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+	top:28vh;
+	left:35vw;
+	z-index:70;
+}
+
