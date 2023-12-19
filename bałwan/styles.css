@@ -1,6 +1,7 @@
-
+*{margin:auto; width:auto;}
 html{background-color:grey; 
 	display:flex;	
+	margin:auto;
 	}
 
 .circle {
@@ -98,7 +99,7 @@ html{background-color:grey;
 	top:46vh;
 	transform: rotate(35deg);
 }
-  #prawa{
+#prawa{
 	
 	position:absolute;
 	left:76vh;
@@ -106,4 +107,16 @@ html{background-color:grey;
 	transform: rotate(510deg);
 	
 }
-  
+ 
+#buzia{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 0 0 grey;
+	position: absolute;
+	z-index:100;
+	left:76.3vh;
+	top:38.5vh;
+	transform: rotate(40deg);
+	
+}
