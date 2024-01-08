@@ -1,0 +1,14 @@
+div{
+	text-align:center;
+	position:relative;
+	}
+#theme{left:-140px}
+
+#big{font-size:50px; color: white;}
+
+#kontener{
+	margin:auto;
+	width:600px;
+	background-image: url('city.jpg');
+}
+
