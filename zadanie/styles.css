@@ -1,14 +1,52 @@
+*{
+	background-repeat:no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+}
+
+
 div{
 	text-align:center;
 	position:relative;
+	color: white;
 	}
-#theme{left:-140px}
+#theme{left:-140px; font-size:30px}
 
 #big{font-size:50px; color: white;}
 
 #kontener{
 	margin:auto;
-	width:600px;
-	background-image: url('city.jpg');
+	width:900px;
+	position:relative;
 }
 
+#main{	
+		background-image: url('city.jpg');
+		width:auto;
+		height:50vh;
+		display:flex;
+		
+		
+	}
+
+#button{	
+	border:1px transparent solid;
+	color:black;
+	background-color: rgb(255,255,255, .5);
+	width:60%;
+	font-size:35px;
+	padding:15px;
+	right:-12vw;
+}
+
+ul{
+	
+	display:flex;
+	justify-content:space-around;
+	list-style:none;
+	background-color: black
+	;color:white;
+	position:relative;
+	width:100%;
+	
+}
