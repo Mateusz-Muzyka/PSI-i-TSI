@@ -10,23 +10,24 @@ div{
 	position:relative;
 	color: white;
 	}
-#theme{left:-140px; font-size:30px}
+#theme{left:-250px; font-size:30px}
 
-#big{font-size:50px; color: white;}
+#big{font-size:100px; color: white; position:relative;}
 
 #kontener{
 	margin:auto;
-	width:900px;
+	width:1248px;
 	position:relative;
+	
 }
 
-#main{	
+#man{	
 		background-image: url('city.jpg');
 		width:auto;
-		height:50vh;
+		height:1040px;
 		display:flex;
-		
-		
+		max-width:100%;
+		max-height:1040px;
 	}
 
 #button{	
@@ -36,7 +37,7 @@ div{
 	width:60%;
 	font-size:35px;
 	padding:15px;
-	right:-12vw;
+	left:200px;
 }
 
 ul{
@@ -47,6 +48,20 @@ ul{
 	background-color: black
 	;color:white;
 	position:relative;
-	width:100%;
+	font-size:35px;
+	top:-50px;
+	width:auto;
+	z-index:100;
+	padding:5px;
+}
+
+#pole{
+	width:auto;
+	z-index:100;
+	font-weight: bold;
+}
+#sub{
+	font-size:33px;
+	font-style: italic;
 	
 }
