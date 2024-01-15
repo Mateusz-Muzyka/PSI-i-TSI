@@ -34,10 +34,10 @@ div{
 	border:1px transparent solid;
 	color:black;
 	background-color: rgb(255,255,255, .5);
-	width:60%;
+	width:40%;
 	font-size:35px;
-	padding:15px;
-	left:200px;
+	padding:30px;
+	left:350px;
 }
 
 ul{
@@ -71,7 +71,8 @@ ul{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size:35px;
+	
+	vertical-align:bottom;
 }
 .img{
 	height:250px;
@@ -81,26 +82,55 @@ ul{
 
 }
 #s1{
-	border:5px solid yellow;
+	border:5px solid black;
 	background-image: url('s1.jpg');
 	float:left;
+	border-bottom-color:transparent;	
 }
 #s2{
-	border:5px solid yellow;
+	border:5px solid black;
 	background-image: url('s2.jpeg');
 	float:left;
+	border-bottom-color:transparent;	
 }
 #s3{
-	border:5px solid yellow;
+	border:5px solid black;
 	background-image: url('s2.jpeg');
 	float:left;
+	border-bottom-color:transparent;	
 }
 #s4{
-	border:5px solid yellow;
+	border:5px solid black;
 	background-image: url('s4.jpg');
 	float:left;
+	border-bottom-color:transparent;
 }
 .tekst{
 	font-family:Arial;
-	
+	vertical-align:bottom;
+	font-size:35px;
+	margin-top:240px;
+	color:black;
+	border:5px black solid;
+	border-top-color:transparent;
+}
+#bot{
+	width:auto;
+	background-color:	rgb(192,192,192);
+	font-family:Arial;
+	font-size:45px;
+	text-align:center;	
+	color:black;
+	font-weight:bold;
+	margin:auto;
+	padding:15px;
+	margin-top:160px;
+}
+.hide {
+  display: none;
+}
+    
+#home:hover + .hide {
+  display: block;
+  color: red;
 }
