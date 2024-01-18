@@ -51,7 +51,7 @@ ul{
 	font-size:35px;
 	top:-50px;
 	width:auto;
-	z-index:100;
+	z-index:90;
 	padding:5px;
 }
 
@@ -126,11 +126,18 @@ ul{
 	padding:15px;
 	margin-top:160px;
 }
-.hide {
-  display: none;
-}
+
     
-#home:hover + .hide {
-  display: block;
-  color: red;
+
+.sub{
+	border: 2px black solid;
+	background-color: rgba(255,0,0,0.5);
+	display: none;
+	margin-top:100px;
+	
 }
+ul a:hover ~ .sub{
+  display: block;
+  position:absolute	
+}
+
