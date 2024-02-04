@@ -134,6 +134,8 @@ ul{
 	background-color: rgba(255,0,0,0.5);
 	display: none;
 	margin-top:100px;
+	width:150px;
+	position:relative;
 	
 }
 ul a:hover ~ .sub{
