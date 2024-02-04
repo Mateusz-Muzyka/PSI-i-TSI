@@ -2,6 +2,7 @@
 	background-repeat:no-repeat;
 	background-size: cover;
 	box-sizing: border-box;
+	font-family:Arial;
 }
 
 
@@ -60,9 +61,11 @@ ul{
 	z-index:100;
 	font-weight: bold;
 }
-#sub{
+.sub{
 	font-size:33px;
 	font-style: italic;
+	width:150px;
+	position:relative;
 	
 }
 #sekcje{
@@ -133,9 +136,13 @@ ul{
 	border: 2px black solid;
 	background-color: rgba(255,0,0,0.5);
 	display: none;
+<<<<<<< HEAD
 	margin-top:100px;
 	width:150px;
 	position:relative;
+=======
+	margin-top:90px;
+>>>>>>> 338e1457dcb4f2631398db24a2b085c51b128bc7
 	
 }
 ul a:hover ~ .sub{
@@ -143,3 +150,11 @@ ul a:hover ~ .sub{
   position:absolute	
 }
 
+.sub > li:hover{
+	display:block;
+	position:relative;
+	margin-left:0;
+	outline-width:2px;
+	outline-color:yellow;
+	outline-style:solid;
+}
