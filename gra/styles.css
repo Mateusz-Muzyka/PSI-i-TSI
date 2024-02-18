@@ -12,6 +12,7 @@
 	left:50%;
 	translate:-50% -50%;
 	z-index: 49;
+	border-radius: 20%;
 }
 header{
 	display:flex;
@@ -61,3 +62,17 @@ footer{
 .hide{visibility: hidden;}
 
 .unhide{visibility: visible;}
+
+#shop{
+
+	width: 300px;
+	height: 100px;
+	border:2px black solid;
+	left:40%;
+	top:20%;
+	display: flex;
+	position:absolute;
+	background-color: yellow;
+}
+
+ul{list-style: none;}
