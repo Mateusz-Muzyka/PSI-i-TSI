@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.wisielec{
+    position: absolute;
+    top:0;
+    left: 0;
+    border:2px red solid;
+}
+
+.slowo{
+    width:2em;
+    font-size:3em;
+    
+}
+
+#fraza{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 30em;
+    border:2px black solid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#ekran{
+    position: relative;
+    width: 300px;
+    height: 600px;
+}
+
+
+h1{
+    text-align: center;
+}
+
