@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.karta{
+    position: absolute;
+    translate: -50% -50%;
+    top: 45%;
+    left: 45%;
+    box-shadow: 3px 3px 10px grey;
+    width: 8rem;
+    height: 11rem;
+    border-radius: 0.5rem;
+}
+
+.karta:hover{
+    outline: 2px red solid;
+}
+
+.znak{
+    position: absolute;
+    left:0.5rem;
+    top:0.5rem;
+}
+.znak2{
+    rotate: 180deg;
+    bottom:0.5rem;
+    right:0.5rem;
+    position: absolute;
+}
+
+.center{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 4rem;
+}
