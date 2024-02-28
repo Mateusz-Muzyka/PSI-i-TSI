@@ -54,14 +54,15 @@ function Shop(){
 		licznik = licznik + p;
 		multi.innerText = Math.round(licznik); 
 		points.innerText = pkt;
-
-		switch(this.id){
-			case buy:
+		let erm = this.id
+		console.log(erm)
+		switch(erm){
+			case "buy":
 				multik = multik+1;
 				
 			break;
 				
-			case buy2:
+			case "buy2":
 				let img = document.createElement('img')
 				img.src = 'pracownik.png';
 				praca.appendChild(img);

@@ -2,6 +2,7 @@
   width: 100px;
   height: 100px;
   position:absolute;
+  border: 2px black solid;
 }
 
 #bot{
@@ -9,6 +10,7 @@
 	left:200px;
 	top:200px;
 	z-index:1;
+	
 }
 #mid{
 	background-color:yellow;
@@ -21,4 +23,12 @@
 	left:300px;
 	top:300px;
 	z-index:3;
+}
+
+span{
+	background-color: pink;
+	position: absolute;
+	right:0;
+	bottom: 0;
+	
 }

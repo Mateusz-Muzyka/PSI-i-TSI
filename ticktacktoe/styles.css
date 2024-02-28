@@ -1,0 +1,35 @@
+tr, th{
+    border:10px transparent solid;
+    width:130px;
+    height: 130px;
+    font-size: 100px;
+    text-align: center;
+    font-family: JP;
+    border-image: url(border.jpg) 30 stretch;
+    padding: 15px;
+    
+}
+table{
+    border:10px transparent solid; 
+    /* border-collapse: collapse; */
+    margin:auto;
+    background-color: #69140e;
+    background-image: linear-gradient(315deg, #69140e 0%, #d58936 74%);
+    border-image: url(border.jpg) 30 stretch;
+    padding: 15px;
+}
+
+th:hover{
+    outline:6px red solid;
+    outline-offset: -9px;
+}
+
+#kolejkaa{
+    float:left;
+}
+
+@font-face {
+    font-family: 'JP';
+    src: url('Old Japanese.otf');
+}
+
