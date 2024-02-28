@@ -136,13 +136,11 @@ ul{
 	border: 2px black solid;
 	background-color: rgba(255,0,0,0.5);
 	display: none;
-<<<<<<< HEAD
 	margin-top:100px;
 	width:150px;
 	position:relative;
-=======
 	margin-top:90px;
->>>>>>> 338e1457dcb4f2631398db24a2b085c51b128bc7
+
 	
 }
 ul a:hover ~ .sub{
