@@ -7,13 +7,14 @@
     position: absolute;
     top:0;
     left: 0;
-    border:2px red solid;
+    /* border:2px red solid; */
 }
 
 .slowo{
     width:2em;
     font-size:3em;
-    
+    display:none;
+    text-align: center;
 }
 
 #fraza{
