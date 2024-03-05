@@ -1,15 +1,20 @@
 const plansza = document.getElementById('plansza');
 const fraza = document.getElementById('fraza');
 const slowa = document.querySelectorAll('.slowo')
-const ekran = document.getElementById('ekran')
+const ekran = document.getElementById('ekran');
+const powiadomienie = document.getElementById("popup");
 let p = 0;
 let delta = true;
 let klikniety = null;
+let stan = 0;
+
 
 let haslo = [
   "banan",
   "kiwi"
 ];
+
+
 let b = haslo.length - 1;
 console.log(b)
 let losowe = Math.round(Math.random() * b);
@@ -27,6 +32,25 @@ for(let a = 0; a < weto; a++){
 }
 
 const slowa2 = document.querySelectorAll('.slowa2')
+
+const teksty = {
+  start:{
+    title: "WISIELEC",
+    desc: "lorem",
+    btn: "START"
+    
+  },
+  wygrana:{
+    title: "WYGRANA!",
+    desc: "lorem",
+    btn: "SPRÓBUJ PONOWNIE"
+  },
+  przegrana:{
+    title: "PRZEGRANA!",
+    desc: "lorem",
+    btn: "SPRÓBUJ PONOWNIE"
+  }
+};
 
 let imgs = [  
   "assets/01.png",
@@ -79,4 +103,24 @@ function endgame(){
     slowa2[i].readOnly = true;
   }
 }
+function kontrola(ST){
+  const tytul = "<h1>" + teksty[ST].title + "</h1>"; 
+  const opis = "<p>" + teksty[ST].desc + "</p>"; 
 
+  powiadomienie.innerHTML = tytul + opis; 
+
+};
+
+switch(stan){
+  case 0:
+    kontrola("start");
+  break;
+  
+  case 1:
+    kontrola("wygrana");
+  break;
+
+  case 2:
+    kontrola("przegrana");
+  break;
+}
