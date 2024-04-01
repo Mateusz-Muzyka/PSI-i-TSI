@@ -18,6 +18,7 @@ table{
     border-image: url(border.jpg) 30 stretch;
     padding: 15px;
     display: none;
+    width: 550px;
 }
 
 th:hover{
@@ -50,4 +51,29 @@ th:hover{
     border-radius: 10px;
     padding: 3em;
     text-align: center; 
+}
+#endscreen{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(128, 128, 128);
+    border-radius: 10px;
+    padding: 3em;
+    text-align: center; 
+    display: none;
+    opacity: 90%;
+    width: 400px;
+    height: 150px;
+
+}
+
+#btnEnd{
+    position: relative;
+    margin-left: 40%;
+}
+
+#wint{
+    font-size: 20px;
+    color:red;
 }
