@@ -1,0 +1,56 @@
+#container{
+    display: flex;
+    width: 100%;
+    float: left
+}
+
+#contact{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    float: left
+}
+
+
+#log{
+    display: flex;
+    width: 27%;
+
+    justify-content: center;
+}
+
+#log > span{
+    border:2px black solid;
+    margin-right:5px;
+    padding:5px;
+    background-color: lightgray;
+    
+}
+
+#log :nth-child(2){
+    background-color: orange;
+}
+
+#log > span:hover{
+ animation-name: loginn;
+ animation-duration: 0.5s ;
+ animation-fill-mode: forwards;
+
+}
+main > section{
+    display: flex;
+    float:left;
+    width: 100%;
+    justify-content: left;
+
+}
+
+/* main > section > {
+    content: url(logo.png);
+    
+} */
+@keyframes loginn{
+    to{
+        background-color: grey;
+    }
+}
