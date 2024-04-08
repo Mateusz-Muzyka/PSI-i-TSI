@@ -1,3 +1,9 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+
 #container{
     display: flex;
     width: 100%;
@@ -37,20 +43,76 @@
  animation-fill-mode: forwards;
 
 }
+main{
+    width: 100%;
+}
 main > section{
     display: flex;
     float:left;
     width: 100%;
     justify-content: left;
-
+    border:1px black solid;
+    background-color: aliceblue;
 }
 
-/* main > section > {
-    content: url(logo.png);
+
+
+
+#logo {
+    background-image: url("logo.png");
+    background-size: 80px;
+    background-repeat: no-repeat;   
+    width: 80px;
+    height: 80px;
     
-} */
+}
 @keyframes loginn{
     to{
         background-color: grey;
+    }
+}
+
+#upper{
+    font-size: 40px;
+}
+
+#lower{
+    font-size: 15px;
+}
+
+
+section > section{
+    font-size:20px;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    
+}
+
+section > section > div{
+    margin-left: 28px;
+}
+
+#panels > div:nth-child(2)::hover{
+
+
+}
+#panels > div:nth-child(3)::after{
+    content: ➤;
+}
+
+
+#panels:hover > #rot, #rot2:hover{
+
+}
+
+
+@keyframes rot{
+    from{
+        transform: rotateZ('0');
+    }
+    to{
+        transform: rotateZ('90');
     }
 }
