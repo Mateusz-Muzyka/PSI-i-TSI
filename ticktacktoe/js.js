@@ -22,6 +22,8 @@ const btn1 = document.getElementById("btnStart")
 const btnEnd = document.getElementById("btnEnd")
 const text = document.getElementById("text")
 const Winner = document.getElementById("playerWin")
+const WinnerMess = document.getElementById("wint");
+
 
 btnEnd.addEventListener("click", restart)
 
@@ -44,7 +46,9 @@ let schema = [
     //nieskończenie wiele;
    
 ]
-
+let tieSchema = [
+    "1,1,1,1,1,1,1,1,1"
+]
 let i = 0;
 let p = 0;
 let osoba = true;
@@ -80,7 +84,7 @@ function start(){
     state = 1;
 }
 
-
+let tie = []
 function gameloop(){
 //dla X
     for(let i = 0; i<9; i++){
@@ -101,8 +105,8 @@ function gameloop(){
     console.log(SchemaOfScheme)
 //sprawdzanie zwycięzcy
     for(let i = 0; i<schema.length;i++){
-        console.log("SchemeofSheme " + SchemaOfScheme.join())
-        console.log(schema[i])
+        // console.log("SchemeofSheme " + SchemaOfScheme.join())
+        // console.log(schema[i])
        if(schema[i] === SchemaOfScheme.join()){
             endscreen.style.display = "block";
             btnEnd.style.display = "block";
@@ -118,7 +122,24 @@ function gameloop(){
        }
     }
 
+    console.log("dla X = " + SchemaOfScheme.join())
+    console.log("dla O = " + SchemaOfScheme2)
 
+
+    for(let i = 0; i<tablica.length; i++){
+        if(tablica[i].innerText == "O" || tablica[i].innerText == "X"){
+            tie[i] = "1";
+        }
+    }
+    if(tie.join() == tieSchema){
+        state = 3;
+    }
+
+    if(state == 3){
+        endscreen.style.display = "block";
+        btnEnd.style.display = "block";
+        WinnerMess.innerText = "REMIS!"
+    }
 }   
 let helper = "";
 //tablica dla X
@@ -126,16 +147,18 @@ let SchemaOfScheme = [];
 //tablica dla O
 let SchemaOfScheme2 = [];
 function points(event){
-    console.log(event.target.id)
+    console.log(event.target.id.innerText)
     //wypisywanie na ekranie
     if(state != 2){
     switch(osoba){
         case 1:
-            helper = "X";
+            if(document.getElementById(event.target.id).innerText != "O"){
+            helper = "X";}
         break;
 
         case 2:
-            helper = "O";
+            if(document.getElementById(event.target.id).innerText!= "X"){
+            helper = "O";}
         break;
     }
     document.getElementById(event.target.id).innerText = helper;
@@ -151,10 +174,12 @@ function restart(){
     endscreen.style.display = "none";
     osoba = 2;
     state = 1;
+    
 
     for(let i = 0; i<tablica.length;i++){
         tablica[i].innerText = "";
         SchemaOfScheme[i] = "";
+        tie[i] = ""
     }
     change();
 }
