@@ -43,10 +43,10 @@
  animation-fill-mode: forwards;
 
 }
-main{
+menu{
     width: 100%;
 }
-main > section{
+menu > section{
     display: flex;
     float:left;
     width: 100%;
@@ -78,6 +78,7 @@ main > section{
 
 #lower{
     font-size: 15px;
+    margin-left:20px;
 }
 
 
@@ -94,25 +95,26 @@ section > section > div{
     margin-left: 28px;
 }
 
-#panels > div:nth-child(2)::hover{
+#panels > div:nth-child(2):hover{
 
-
+color:red;
+/* transform: rotate(30deg); */
 }
-#panels > div:nth-child(3)::after{
-    content: ➤;
+#panels > div:nth-child(3):hover{
+
+color:red;
+/* transform: rotate(30deg); */
+}
+#panels > div:nth-child(2):hover > #rot{
+    color:red;
+
+    transform: translate(-50% 50%);
+}
+#panels > div:nth-child(3):hover > #rot{
+    color:red;
+    transform: translate(-50% 50%);
 }
 
-
-#panels:hover > #rot, #rot2:hover{
-
-}
-
-
-@keyframes rot{
-    from{
-        transform: rotateZ('0');
-    }
-    to{
-        transform: rotateZ('90');
-    }
+main{
+    
 }
