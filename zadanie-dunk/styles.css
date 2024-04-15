@@ -127,9 +127,8 @@ color:red;
     position: absolute;
     height: 27em;
     width: 20em;
-    top:170px;
+    top:200px;
     left: 50px;
-    border:2px red solid;
     background-color: rgba(255,255,255,90%);
 }
 
@@ -186,4 +185,48 @@ option{
     font-size: 16px;
     text-align: center;
     padding: 0.6em 0;
+}
+
+
+#dreams{
+    position: absolute;
+    top:35%;
+    left:50%;
+    color:white;
+    font-size: 26px;
+}
+
+#dreams > h2:nth-child(2){
+    background-color: rgb(65, 60, 60);
+    padding: 10px;
+    font-weight: 100;
+}
+#dreams > h2:nth-child(3){
+    font-weight: 100;
+    background-color: rgb(230, 55, 55);
+    padding: 10px;
+    width: 300px;
+}
+#dreams > h1{
+    font-weight: 700;
+}
+
+#category{
+    position: absolute;
+    /* border: 2px red solid; */
+    top:172px;
+    left: 70px;
+    width: 150px;
+    color: white;
+    font-size: 20px;
+}
+#category > span:nth-child(2){
+    
+}
+
+#category > span{
+    border:2px red solid;
+    background-color: grey;
+    padding: 6px;
+
 }
