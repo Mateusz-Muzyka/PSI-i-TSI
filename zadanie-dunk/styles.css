@@ -114,7 +114,76 @@ color:red;
     color:red;
     transform: translate(-50% 50%);
 }
+#containerOfFormula{
+    width: auto;
+    height: 650px;
+    background-image: url('back.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
 
-main{
+}
+
+#formula > div:nth-child(1){
+    position: absolute;
+    height: 27em;
+    width: 20em;
+    top:170px;
+    left: 50px;
+    border:2px red solid;
+    background-color: rgba(255,255,255,90%);
+}
+
+#container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 30px;
+}
+select{
+    width: 20em;
+    height: 2.5em;
     
+}
+
+.sel1{
+    width: 10em;
+}
+.sel2{
+    width: 10em;
+}
+
+.lab2{
+    margin-right: 40px;
+}
+
+#container > select:nth-child(2){
+    margin-bottom: 20px;
+}
+
+.cont{
+    margin-bottom:20px;
+}
+
+option{
+    font-size: 15px;
+}
+
+#bed{
+    margin-left:-30px;
+}
+
+#checks{
+    width: 180px;
+}
+
+#search{
+    margin-top: 20px;
+    width: 17em;
+    background-color: rgb(230, 55, 55);
+    color:white;
+    font-size: 16px;
+    text-align: center;
+    padding: 0.6em 0;
 }
