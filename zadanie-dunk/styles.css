@@ -71,6 +71,11 @@ menu > section{
         background-color: grey;
     }
 }
+@keyframes renter{
+    to{
+        background-color: rgb(167, 135, 135);
+    }
+}
 
 #upper{
     font-size: 40px;
@@ -116,10 +121,13 @@ color:red;
 }
 #containerOfFormula{
     width: auto;
-    height: 650px;
+    height: 60vw;
+    max-height: 740px;
     background-image: url('back.webp');
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    background-position: center;
 
 }
 
@@ -233,29 +241,81 @@ footer{
     display: flex;
     flex-wrap: wrap;
     width: auto;
-    border:3px yellow solid;
+    /* border:3px yellow solid; */
     background-color: antiquewhite;
 }
 
 
 footer > div {
-    margin-left: 50px;
-    margin-right: 50px;
+    /* border: 2px red solid; */
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
+footer > div > section{
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px aqua solid ; */
+    /* height: 100%; */
+    /* position: relative; */
+    /* display: block; */
+}
 footer > div > section > article{
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 30px;
     float: left;
-    justify-content: space-between;
-    border: 2px red solid;
-    width: 180px;
-    background-color: bisque;
+    justify-content: space-around;
+    /* border: 2px red solid; */
+    width: 20%;
+    background-color: antiquewhite
+    ;
+    text-wrap: wrap;
     
 }
 
-footer > div > section > article:before{
+/* footer > div > section > article:before{
     content: url("icon-map-s.png");
     transform: scale(0.5);
+} */
+
+article > p{
+    text-wrap: wrap;
+    position: relative;
+
+}
+
+img{
+    flex-wrap: wrap;
+    height: 100%;
+    width: 30%;
+    float: left;
+}
+
+h3{
+    width: 60%;
+    flex-wrap: wrap;
+    float: left;
+}
+p{
+    width: 60%;
+    flex-wrap: wrap;
+    float: left;
+    text-wrap: wrap;
+    /* height: ; */
+
+}
+
+
+
+
+
+#r:hover,#b:hover{
+    animation-name: renter;
+    animation-duration: 0.5s ;
+    animation-fill-mode: forwards;
+
 }
