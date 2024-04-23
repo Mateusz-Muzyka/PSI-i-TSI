@@ -1,0 +1,11 @@
+#canvas{
+    border: 2px black solid;
+    display: grid;
+    place-items: center;
+}
+
+body{
+    display: grid;
+    place-items: center;
+}
+
