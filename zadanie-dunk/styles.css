@@ -7,7 +7,9 @@
 #container{
     display: flex;
     width: 100%;
-    float: left
+    float: left;
+    /* max-width: 1100px; */
+    
 }
 
 #contact{
@@ -45,6 +47,7 @@
 }
 menu{
     width: 100%;
+    display: flex;
 }
 menu > section{
     display: flex;
@@ -128,7 +131,9 @@ color:red;
     background-size: cover;
     position: relative;
     background-position: center;
-
+    /* min-width: 1100px; */
+    min-height: 740px;
+    /* border: 2px red solid; */
 }
 #formula > div:nth-child(1){
     position: absolute;
@@ -137,6 +142,7 @@ color:red;
     top:200px;
     left: 50px;
     background-color: rgba(255,255,255,90%);
+    /* border:2px red solid; */
 }
 
 #container{
@@ -201,6 +207,7 @@ option{
     left:50%;
     color:white;
     font-size: 26px;
+    /* border:2px red solid */
 }
 
 #dreams > h2:nth-child(2){
@@ -226,11 +233,12 @@ option{
     width: 150px;
     color: white;
     font-size: 20px;
+    /* border:2px red solid; */
 }
 
 
 #category > span{
-    border:2px red solid;
+    /* border:2px red solid; */
     background-color: grey;
     padding: 6px;
 
@@ -242,6 +250,8 @@ footer{
     width: auto;
     /* border:3px yellow solid; */
     background-color: antiquewhite;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -284,7 +294,7 @@ footer > div > section > article{
 article > p{
     text-wrap: wrap;
     position: relative;
-
+    padding: 7px;
 }
 
 img{
@@ -326,10 +336,15 @@ p{
     position: relative;
     display: block;
     background-color: rgb(236, 198, 148);
-    width: auto;
+    width: 100%;
     height: auto;
     text-align: center;
     min-height: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-width: 100%;
+    
 }
 
 #lowerCaser > section:first-child{
@@ -338,6 +353,7 @@ p{
     line-height: 58px;
     color: #2c3e50;
     font-family: Quicksand, Arial, Helvetica, sans-serif;
+    width: 100%;
 }
 section > p{
     display: block;
@@ -353,15 +369,59 @@ section > p{
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    float:left;
+    /* float:left; */
     margin-top: 40px;
-    margin-left: 80px;
+    /* margin-left: 40px; */
+    border: 2px black solid;
+    background-color: aliceblue;
     
 }
 
 .option > img{
-    width: 17rem;
+    width: 100%;
     height: 12rem;
     background-repeat: no-repeat;
     
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color:black;
+}
+
+
+
+
+@media only screen and (max-width: 1099px ){
+    #lowerCaser{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1099px;
+        min-width: none;
+    }
+    #option{
+        
+    }
+
+    #containerOfFormula{
+        max-width: 1099px;
+        width: 100%;
+        min-width: none;
+    }
+    footer{
+        max-width: 100%;
+        width: 100%;
+        min-width: none;
+    }
+    #container{
+        max-width: 1099px;
+        min-width: none;
+        width: 100%;
+    }
 }
