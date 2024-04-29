@@ -130,7 +130,6 @@ color:red;
     background-position: center;
 
 }
-
 #formula > div:nth-child(1){
     position: absolute;
     height: 27em;
@@ -318,4 +317,51 @@ p{
     animation-duration: 0.5s ;
     animation-fill-mode: forwards;
 
+}
+
+
+
+
+#lowerCaser{
+    position: relative;
+    display: block;
+    background-color: rgb(236, 198, 148);
+    width: auto;
+    height: auto;
+    text-align: center;
+    min-height: 400px;
+}
+
+#lowerCaser > section:first-child{
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 58px;
+    color: #2c3e50;
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+}
+section > p{
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    color: #f15455;
+}
+
+.option{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    float:left;
+    margin-top: 40px;
+    margin-left: 80px;
+    
+}
+
+.option > img{
+    width: 17rem;
+    height: 12rem;
+    background-repeat: no-repeat;
+    
 }
