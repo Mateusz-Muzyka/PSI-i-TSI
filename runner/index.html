@@ -7,10 +7,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="container">
-        <div id="obstacle"></div>
-        <div id="land"></div>
-        <div id="player"></div>
+    <div id="container" class="backS">
+
+        <div id="MainMenu">
+            <div id="meniu">
+                <button id="start">START</button>
+            </div>
+        </div>
+
+        <div id="gameRun">
+            <div id="points"></div>
+            <div id="pauseInfo"></div>
+            
+            <div id="obstacle" ><img id="img" src="obst3.png"> </div>
+            <div id="land"></div>
+            <div id="player"><img src="runner-player33.gif"></div>
+        </div>
+        
+        <div id="endgame">
+          <div>BRAWO! Pokonałeś <span id="Winner_messege"></span> przeszkód</div>
+          <button id="tryAgain">SPRÓBUJ PONOWNIE</button>
+          <button id="exit">WYJDŹ DO MENU</button>
+        </div>
+
     </div>
 
 
