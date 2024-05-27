@@ -7,37 +7,96 @@ main{
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 10px;
+    place-items: center;
 }
 section{
-    display: grid;
-    outline: auto;
+    border-radius:20px;
     height: 200px;
     align-items: center;
     justify-items: center;
+    /* outline: auto; */
 }
 
-main > section{
+main > article > section{
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 150px;
+    min-width: 340px;
     max-height: 200px;
     max-width: 370px;
 }
 
-main > section:nth-child(1){
+main > article:nth-child(1) > section{
     background-image: url(obr1.jpg);
 }
-main > section:nth-child(2){
+main > article:nth-child(2) > section{
     background-image: url(obr2.jpg);
 }
-main > section:nth-child(3){
+main > article:nth-child(3) > section{
     background-image: url(obr3.jpg);
 }
-main > section:nth-child(4){
+main > article:nth-child(4) > section{
     background-image: url(obr4.jpg);
 }
-main > section:nth-child(5){
+main > article:nth-child(5) > section{
     background-image: url(obr5.jpg);
 }
-main > section:nth-child(6){
+main > article:nth-child(6) > section{
     background-image: url(obr6.jpg);
+}
+
+
+.text{
+    /* outline: 2px red solid; */
+    width: 320px;
+    display: block;
+    float: left;
+    text-align: left;
+}
+.descript{
+    /* outline: auto; */
+    display: block;
+    width: calc(100%-50px);
+}
+.title{
+    /* outline: auto; */
+    /* text-align: center; */
+    /* align-self: self-end; */
+    display: block;
+    font-weight: bold;
+}
+img{
+    display: flex;
+    width: 50px;
+    float: left;
+    border-radius: 30px;
+}
+
+#to_be{
+    font-size: 13px;
+}
+@media only screen and (min-width: 1700px) {
+    main{
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
+@media only screen and (max-width: 1700px) {
+    main{
+        grid-template-columns: auto auto auto auto;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    main{
+        grid-template-columns: auto auto auto ;
+    }
+}
+@media only screen and (max-width: 1050px) {
+    main{
+        grid-template-columns: auto auto;
+    }
+}
+@media only screen and (max-width: 710px) {
+    main{
+        grid-template-columns: auto;      
+    }
 }
