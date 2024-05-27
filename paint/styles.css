@@ -1,0 +1,67 @@
+#ColorPanel > button{
+    width: 20px;
+    height: 20px;
+}
+#ColorPanel{
+    width:170px;
+}
+
+#ColorPanel > button:hover{
+    outline: 2px red solid;
+}
+
+#red{
+    background-color: red;
+}
+#blue{
+    background-color: blue;
+}
+#black{
+    background-color: black;
+}
+#white{
+    background-color: white;
+}
+#orange{
+    background-color: orange;
+}
+#green{
+    background-color: green;
+}
+#yellow{
+    background-color: yellow;
+}
+
+
+#sizer{
+    border-radius: 50px;
+    width: 170px;
+}
+
+.slider{
+
+    width: 100%;
+    border-radius: 5px;  
+    background: #d3d3d3;
+}
+
+
+#button > span{
+   text-shadow: black 1px 0 10px;
+}
+
+#tools{
+    width:170px
+}
+#tools > button{
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+
+}
+
+#tools > button > span{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}

@@ -4,11 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
 <canvas id="canvas" width="600px" height="300px" style="outline: auto;"></canvas>
-<button id="button">reset 👆🏻</button>
+<button id="button">reset <span>👆🏻</span></button>
+
+<div id="ColorPanel">
+    <button class="colors" id="blue"></button>
+    <button class="colors" id="red"></button>
+    <button class="colors" id="yellow"></button>
+    <button class="colors" id="green"></button>
+    <button class="colors" id="white"></button>
+    <button class="colors" id="orange"></button>
+    <button class="colors" id="black"></button>
+    <div id="tools">
+        <button id="pen"><span>✏️</span></button>
+        <button id="bucket"><span>🪣</span></button>
+    </div>
+</div>
+<div id="sizer">
+    <input type="range" min="1" max="100" value="50" class="slider" id="sizerr">
+</div>
+
 <script src="js.js"></script>
 </body>
 </html>
