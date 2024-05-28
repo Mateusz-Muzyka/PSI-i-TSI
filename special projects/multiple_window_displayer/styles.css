@@ -1,0 +1,16 @@
+#pointer{
+    width: 100px;
+    height: 20px;
+    background-color: blueviolet;
+    display: flex;
+    margin-left: 40%;
+    outline: auto;
+}
+
+#pointer > div{
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+    display: flex;
+    
+}
