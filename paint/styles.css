@@ -65,3 +65,18 @@
     align-items: center;
     display: flex;
 }
+
+.spriteClick{
+    width: 20px;
+    height: 20px;
+}
+.spriteClick:nth-child(1){
+    background-image: url('sprite1.webp');
+    background-size: cover;
+}
+
+.spriteClick:nth-child(2){
+    background-image: url('sprite2.png');
+    background-size: cover;
+}
+
