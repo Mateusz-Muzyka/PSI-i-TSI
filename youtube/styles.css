@@ -17,7 +17,7 @@ section{
     /* outline: auto; */
 }
 
-main > article > section{
+main > a > article > section{
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 150px;
@@ -26,22 +26,22 @@ main > article > section{
     max-width: 370px;
 }
 
-main > article:nth-child(1) > section{
+main > a:nth-child(1) > article > section{
     background-image: url(obr1.jpg);
 }
-main > article:nth-child(2) > section{
+main > a:nth-child(2) > article > section{
     background-image: url(obr2.jpg);
 }
-main > article:nth-child(3) > section{
+main > a:nth-child(3) > article > section{
     background-image: url(obr3.jpg);
 }
-main > article:nth-child(4) > section{
+main > a:nth-child(4) > article > section{
     background-image: url(obr4.jpg);
 }
-main > article:nth-child(5) > section{
+main > a:nth-child(5) > article > section{
     background-image: url(obr5.jpg);
 }
-main > article:nth-child(6) > section{
+main > a:nth-child(6) > article > section{
     background-image: url(obr6.jpg);
 }
 
@@ -56,7 +56,7 @@ main > article:nth-child(6) > section{
 .descript{
     /* outline: auto; */
     display: block;
-    width: calc(100%-50px);
+    width: 250px;
 }
 .title{
     /* outline: auto; */
