@@ -3,6 +3,9 @@
     padding: 0;
     /* display: grid; */
 }
+body{
+    background-color: black;
+}
 main{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -27,31 +30,38 @@ main > a > article > section{
 }
 
 main > a:nth-child(1) > article > section{
-    background-image: url(obr1.jpg);
+    background-image: url(miniatures/obr1.jpg);
 }
 main > a:nth-child(2) > article > section{
-    background-image: url(obr2.jpg);
+    background-image: url(miniatures/obr2.jpg);
 }
 main > a:nth-child(3) > article > section{
-    background-image: url(obr3.jpg);
+    background-image: url(miniatures/obr3.jpg);
 }
 main > a:nth-child(4) > article > section{
-    background-image: url(obr4.jpg);
+    background-image: url(miniatures/obr4.jpg);
 }
 main > a:nth-child(5) > article > section{
-    background-image: url(obr5.jpg);
+    background-image: url(miniatures/obr5.jpg);
 }
 main > a:nth-child(6) > article > section{
-    background-image: url(obr6.jpg);
+    background-image: url(miniatures/obr6.jpg);
 }
 
-
+.text:visited{
+    color:white;
+}
+.text:hover{
+    color:blue;
+}
 .text{
     /* outline: 2px red solid; */
     width: 320px;
     display: block;
     float: left;
     text-align: left;
+    color:white;
+    font-weight: 500px;
 }
 .descript{
     /* outline: auto; */
@@ -75,6 +85,34 @@ img{
 #to_be{
     font-size: 13px;
 }
+
+#category{
+    height: 30px;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#category > .SpecifyCategory{
+    outline: 2px white solid;
+    background-color: rgb(62, 62, 62);
+    border-radius: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 20px;
+}
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 1700px) {
     main{
         grid-template-columns: auto auto auto auto auto;
