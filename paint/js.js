@@ -1,6 +1,21 @@
 const canvas = document.getElementById("canvas");
 const reset = document.getElementById("button");
 const ctx = canvas.getContext("2d");
+
+let LevelSave = [
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+]
+const Saver = document.getElementById("val")
+const importBut = document.getElementById("import")
+
+importBut.addEventListener("click",impor)
 ctx.fillStyle = "red";
 let draw
 let PosX
@@ -22,11 +37,13 @@ const dirt = document.getElementById("dirt")
 const star = document.getElementById("star")
 
 
-
+let size = 40;
 
 const swipe = document.getElementById("sizerr")
 
-
+let snapnap 
+let snapnap2
+         TPx = snapnap/size;
 
 const pen = document.getElementById("pen")
 const bucket = document.getElementById("bucket")
@@ -44,32 +61,23 @@ canvas.addEventListener("mousemove", (e) => {
      PosX = e.offsetX;
      PosY = e.offsetY;
     if(draw == 1 && penA == true){
+         snapnap = Math.floor(PosX / size) * size
+         snapnap2 = Math.floor(PosY / size) * size
         if(penter == "Rect"){
             ctx.fillRect(PosX, PosY, width,height);
         }
         if(penter == "dirt"){
             const img = new Image();
             img.onload = () => {
-              ctx.drawImage(img, PosX, PosY);
-              ctx.beginPath();
-              ctx.moveTo(width, height);
-              ctx.lineTo(width, height);
-              ctx.lineTo(width, height);
-              ctx.lineTo(width, height);
-              ctx.stroke();
+              ctx.drawImage(img, snapnap,snapnap2,size,size)
             };
             img.src = "sprite1.jpg";
         }
         if(penter == "star"){
             const img = new Image();
             img.onload = () => {
-              ctx.drawImage(img, PosX, PosY);
-              ctx.beginPath();
-              ctx.moveTo(width, height);
-              ctx.lineTo(width, height);
-              ctx.lineTo(width, height);
-              ctx.lineTo(width, height);
-              ctx.stroke();
+              ctx.drawImage(img, snapnap,snapnap2,size,size)
+        
             };
             img.src = "sprite2.png";
         }
@@ -97,6 +105,36 @@ function drawing(){
     window.requestAnimationFrame(drawing)  
     width = swipe.value/5
     height = swipe.value/5
+
+    
+}
+
+
+function impor(){
+    let TPx
+    let TPy
+for(let i = 0; i<8;i++){
+    for(let q = 0; q<15;q++){
+        let temp = LevelSave[i][q];
+         TPx = snapnap/size;
+         TPy = snapnap2/size;
+         console.log(snapnap,size)
+        switch(temp){
+            case 0:
+
+            break;
+            
+            case 1:
+                const img = new Image();
+                img.onload = () => {
+                  ctx.drawImage(img, TPx*size*q,TPy*size*q,size,size)
+                };
+                img.src = "sprite1.jpg";
+            break;
+
+        }
+    }
+}
 }
 
 function tools(){
@@ -118,6 +156,7 @@ function tools(){
         break;
     }
 }
+
 
 
 function ChangeColor(){
