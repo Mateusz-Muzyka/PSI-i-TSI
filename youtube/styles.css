@@ -108,11 +108,30 @@ img{
 
 
 
+.SpecifyCategory:nth-child(1):hover{
+    animation: catig 0.5s forwards;
+}
+.SpecifyCategory:nth-child(2):hover{
+    animation: catig 0.5s forwards;
+}
+.SpecifyCategory:nth-child(3):hover{
+    animation: catig 0.5s forwards;
+}
+.SpecifyCategory:nth-child(4):hover{
+    animation: catig 0.5s forwards;
+}
+.SpecifyCategory:nth-child(5):hover{
+    animation: catig 0.5s forwards;
+}
 
 
 
-
-
+@keyframes catig {
+    from{
+        background-color: rgb(62, 62, 62);
+    }
+    to{background-color: rgb(102, 101, 101);}
+}
 @media only screen and (min-width: 1700px) {
     main{
         grid-template-columns: auto auto auto auto auto;
